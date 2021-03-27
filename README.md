@@ -1,2 +1,3 @@
 # hash_1
-The worlds most secure password manager.
+A password manager which hashes and stores your passwords locally on your PC .
+
