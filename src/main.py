@@ -11,9 +11,10 @@ def main():
     # taking the initial inputs
     user = input("Username:")
     password = getpass.getpass(prompt="Password:", stream=None)
+    pass = bytes(password, 'utf-8')
     key = Fernet.generate_key()
     f = Fernet(key)
-    token = f.encrypt(password)
+    token = f.encrypt(pass)
     print(token)
     
 
